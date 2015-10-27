@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Fraccion::VERSION
   spec.authors       = ["Jesús Marín"]
   spec.email         = ["alu0100502114@ull.edu.es"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Operaciones con fracciones.}
+  spec.description   = %q{Realiza operaciones básicas con fracciones: Suma, Resta, Multiplicación y División}
   spec.homepage      = ""
   spec.license       = "MIT"
 
