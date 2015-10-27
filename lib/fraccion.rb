@@ -44,6 +44,8 @@ class Fraccion
       "0"
     elsif @n != 0 && @d == 0
       "infinito"
+    elsif @d == 1
+      "#{signo}#{@n}"
     else
       "#{signo}#{@n}/#{@d}"
     end
@@ -75,6 +77,16 @@ class Fraccion
   def * (other)
     num = (@signo * @n * other.signo * other.n)
     den = @d * other.d
+    g = num.gcd(den)
+    Fraccion.new(num/g, den/g)
+  end
+
+  # Divide otra fracción de ésta
+  # Parámetros:
+  #   other con fracción a dividir
+  def / (other)
+    num = (@signo * @n * other.d)
+    den = @d * other.n * other.signo
     g = num.gcd(den)
     Fraccion.new(num/g, den/g)
   end
