@@ -56,7 +56,17 @@ class Fraccion
     num = (@signo * @n * other.d) + (other.signo * other.n * @d)
     den = @d * other.d
     g = num.gcd(den)
-    Fraction.new(num/g, den/g)
+    Fraccion.new(num/g, den/g)
+  end
+
+  # Resta otra fracción de ésta
+  # Parámetros:
+  #   other con fracción a restar
+  def - (other)
+    num = (@signo * @n * other.d) - (other.signo * other.n * @d)
+    den = @d * other.d
+    g = num.gcd(den)
+    Fraccion.new(num/g, den/g)
   end
 
 end
