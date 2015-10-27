@@ -68,5 +68,15 @@ class Fraccion
     g = num.gcd(den)
     Fraccion.new(num/g, den/g)
   end
+  
+  # Multiplica otra fracción por ésta
+  # Parámetros:
+  #   other con fracción a multiplicar
+  def * (other)
+    num = (@signo * @n * other.signo * other.n)
+    den = @d * other.d
+    g = num.gcd(den)
+    Fraccion.new(num/g, den/g)
+  end
 
 end

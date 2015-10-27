@@ -42,4 +42,13 @@ class TestFraccion < Test::Unit::TestCase
     assert_equal("27/20", (@f2 - @f3).to_s, "Resta 5")
   end
 
+  # Test multiplicación
+  def test_mul
+    assert_equal("9/20", (@f1 * @f2).to_s, "Multiplica 1")
+    assert_equal("-9/25", (@f1 * @f3).to_s, "Multiplica 2")
+    assert_equal("-9/25", (@f1 * @f5).to_s, "Multiplica 3")
+    assert_equal("9/25", (@f1 * @f4).to_s, "Multiplica 4")
+    assert_equal("-9/20", (@f2 * @f3).to_s, "Multiplica 5")
+  end
+
 end
