@@ -1,41 +1,41 @@
-# Fraction
+# Fraccion
 
 Lenguajes y Paradigmas de Programación
 Práctica de laboratorio #5
 
 Representar números fraccionarios y realizar operaciones aritméticas básicas con ellos
 
-## Installation
+## Instalación
 
-Add this line to your application's Gemfile:
+Añada esta línea a su Gemfile de aplicación:
 
 ```ruby
-gem 'fraction'
+gem 'fraccion'
 ```
 
-And then execute:
+Y luego ejecute:
 
     $ bundle
 
-Or install it yourself as:
+O haga su propia instalación mediante:
 
-    $ gem install fraction
+    $ gem install fraccion
 
-## Usage
+## Uso
 
-# this Class lets you create an Fraction passing Numerator and Denominator to constructor
-a = Fraction.new(6,10)
-b = Fraction.new(4,3)
-# to operate with Fractions
+# Esta Clase le permite crear una Fracción pasándole el Numerador y Denominador al constructor
+a = Fraccion.new(3,5)
+b = Fraccion.new(4,3)
+# para opera con Fraccion
 puts a + b
 puts a - b
 puts a * b
 puts a / b
 
-## Contributing
+## Contribuyendo
 
-1. Fork it ( https://github.com/[my-github-username]/fraction/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Duplicar ( https://github.com/[mi-nombre-de-usuario-en-github]/fraccion/fork )
+2. Crear tu propia rama (`git checkout -b mi-nueva-característica`)
+3. Acometer cambios (`git commit -am 'Añadir característica'`)
+4. Empujar a la rama (`git push origin mi-nuemva-característica )
+5. Crear un nuevo Requerimiento de Recogida (Pull)
